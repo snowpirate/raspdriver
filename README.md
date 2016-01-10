@@ -28,10 +28,12 @@ Project Setup
 2. Install the touchscreen (this is where you can get creative.  I recommend making a "case" for everything at this point)
 3. Boot up and install required software (give it the internet)
 4. Get the GPS setup (See link to blog)
+    a. I needed to also modify /etc/default/gpsd with the following lines:
+        DEVICES="/dev/ttyUSB0"
+        GPSD_SOCKET="/var/run/gpsd.sock"
 5. Modify the Automotive DC plugs to provide power to the Pi and the USB Hub & Install in Housing.
-    ! This part is particularly important, as the USB hub needs to be powered.
-    ! The Pi doesn't have the power available to power the GPS and WiFi Dongles.
-
+    !! This part is particularly important, as the USB hub needs to be powered.
+    !! The Pi doesn't have the power available to power the GPS and WiFi Dongles.
     a. Automotive DC plug will terminate into the input of the 2 step down transformers.
     b. The output of the step down transformers will be the male 2.1 x 5.5mm DC Power Pigtails.
     c. Give one pigtail the DC to USB adaptor for the Pi, Screen, and UPS.
