@@ -69,6 +69,7 @@ http://blog.retep.org/2012/06/18/getting-gps-to-work-on-a-raspberry-pi/
 
 PiUPS #1
 http://www.amazon.com/Pi-UPS-Raspberry-Backup-Supply/dp/B00JNFP71A
+http://piups.net/support/
 Pi UPS - Raspberry Pi Backup Power Supply by CW2.
 * This one didn't work for me.  It wasn't recognized (perhaps due to the touchscreen) so it never shut the Pi down.
 * It did however keep it running when power was lost, so that was nice until the second UPS arrives.
