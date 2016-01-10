@@ -6,6 +6,11 @@ Abstract
 
 This collection of short BASH scripts allows a stock Raspberry Pi to become an automotive accessory that captures packets as you drive around.  The overall goal is to make it autonomous, requiring no user intervention whatsoever.  The final goal will be to port the entire project over to Python.
 
+Important note!
+
+All the absolute paths are currently using /home/pi as the working directory.  Please adjust files accordingly when cloning this repository. (I might fix this later)
+
+
 
 Info
 
