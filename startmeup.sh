@@ -25,6 +25,25 @@ sudo killall dhcpcd
 sudo killall wpa_supplicant
 #sleep 1
 
+# check for the extras directory
+if [ -d /home/pi/extras ];
+then
+    echo Directory found
+else
+    mkdir /home/pi/extras
+fi
+
+
+# check for the zips directory
+if [ -d /home/pi/zips ];
+then
+    echo Directory found
+else
+    mkdir /home/pi/zips
+fi
+
+
+
 #clear
 echo
 echo "[ $(tput setaf 6)PiDrive$(tput sgr0) ]"  Starting the Secret Sauce...
