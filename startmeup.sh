@@ -28,25 +28,23 @@ sudo killall wpa_supplicant
 # check for the extras directory
 if [ -d /home/pi/extras ];
 then
-    echo Directory found
+    echo "[ $(tput setaf 6)PiDrive$(tput sgr0) ]"  Extras Directory found!
 else
     mkdir /home/pi/extras
 fi
 
-
 # check for the zips directory
 if [ -d /home/pi/zips ];
 then
-    echo Directory found
+    echo "[ $(tput setaf 6)PiDrive$(tput sgr0) ]"  Zips Directory found!
 else
     mkdir /home/pi/zips
 fi
 
-
-
 #clear
 echo
 echo "[ $(tput setaf 6)PiDrive$(tput sgr0) ]"  Starting the Secret Sauce...
+echo
 
 # sort of self explanitory.  we output everything we can do /dev/null IOT suppress stuff going to the screen
 
@@ -73,5 +71,6 @@ echo
 
 sudo airmon-ng
 sleep 1
+echo
 
 ps -ef | grep airodump | awk '{print $7, $8, $9, $10, $11}'
